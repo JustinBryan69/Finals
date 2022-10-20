@@ -1,6 +1,6 @@
 <div class="form-style-3">
 <form>
-<h2>Student ID <br> Registration System</h2>
+<h2>Student ID Registration System</h2>
 <fieldset>
   <label for="field1">UC ID:</label>
 <input type="number"
@@ -8,18 +8,74 @@
     id="sessionNo" 
     name="sessionNum" 
     onkeypress="return isNumberKey(event)" 
-    maxlength="9"
+    maxlength="11"
     placeholder="00-0000-000" />
     <br>
     <br>
- <label for="field1">Password:</label>
-<input type="text"
+ <label for="field1">Last Name:</label>
+<input type="ptext"
        border = none;
     id="sessionNo" 
     name="sessionNum" 
-    maxlength="9"
-    placeholder="password" />
+    placeholder="" />
     <br>
+<br>
+ <label for="field1">First Name:</label>
+<input type="ptext"
+       border = none;
+    id="sessionNo" 
+    name="sessionNum" 
+    placeholder="" />
+    <br>
+<br>
+  <label for="field1">Course</label>
+      <select name="languages" id="lang">
+        <option value="col">College of Law</option>
+        <option value="con">College of Nursing</option>
+        <option value="coa">College of Accountancy</option>
+        <option value="citcs">College of Information Technology and Computer Science</option>
+        <option value="cas">College of Arts and Sciences</option>
+        <option value="chtm">College of Hospitality and Tourism Managementt</option>
+        <option value="coc">College of Criminology</option>
+        <option value="cea">College of Engineering and architecture</option>
+        <option value="cte">College of Teacher Education</option>
+<br>
+<br>
+
+      </select>
+
+<br>
+<br>
+<label for="field1">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+
+    <br>
+ <br>
+
+ <label for="field1">Address:</label>
+<input type="ptext"
+       border = none;
+    id="sessionNo" 
+    name="sessionNum" 
+    placeholder="" />
+    <br>
+
+  <br>
+ <label for="field1">Name of Father:</label>
+<input type="ptext"
+       border = none;
+    id="sessionNo" 
+    name="sessionNum" 
+    placeholder="" />
+      <br>
+     <label for="field1">Name of Mother:</label>
+<input type="ptext"
+       border = none;
+    id="sessionNo" 
+    name="sessionNum" 
+    placeholder="" />
+    <br>
+
 <br>
 
 <label><span> </span><input type="submit" value="Login Now" /></label>
@@ -30,27 +86,51 @@
 <style type="text/css">
 .form-style-3{
        max-width: 450px;
-       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
 }
 
 h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #92cbdf;
+  padding: 50x 50px;
+ font-size: 45px;
+   display: flex;
+  justify-content: center;
 
-background: #f38314;
+}
+h3 {
+
+ font-weight: bold;
+       font-size: 20px;
 
        
 
 }
-body {
+body{
+background: #93CDE8
+
+
+}
+
+
+
+fieldset {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
+  justify-content: center;
   transform: translate(-50%,-50%);
   background: #92cbdf;
   padding: 10px 20px;
+
 }
 .form-style-3 label{
        display:block;
        margin-bottom: 10px;
+      
     
 }
 .form-style-3 label > span{
@@ -60,6 +140,7 @@ body {
        font-weight: bold;
        font-size: 13px;
        text-shadow: 1px 1px 1px #fff;
+    
     
 }
 .form-style-3 fieldset{
